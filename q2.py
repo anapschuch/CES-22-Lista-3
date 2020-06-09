@@ -49,7 +49,9 @@ class Tomate(Decorador):
 # Testando uma pizza com presunto, tomate e queijo:
 pizza = Presunto(Queijo(Tomate(Massa())))
 print(pizza.getDescricao() + ": R$ ", str(pizza.getCustoTotal()))
+# terminal: Massa Tomate Queijo Presunto: R$  6.5
 
 # Testando uma pizza de queijo:
 pizza2 = Queijo(Massa())
 print(pizza2.getDescricao() + ": R$ ", str(pizza2.getCustoTotal()))
+# terminal: Massa Queijo: R$  3.0

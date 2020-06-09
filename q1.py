@@ -78,7 +78,11 @@ class Automovel(Transporte):
         print("Manutenção do automóvel concluída")
 
 
-#Testando um caminhão com motorização elétrica
+# Testando um caminhão com motorização elétrica
+
 transporte = Caminhao(Eletrica())
 transporte.mover_veiculo()
+# terminal: Caminhao moveu para frente
+
 transporte.motorizacao.verificar_consumo()
+# terminal: Consumo da motorização elétrica

@@ -51,10 +51,16 @@ class EscolherTransporte:
 #Criar um caminhao
 transporte = EscolherTransporte.criar_transporte(True)
 transporte.mover_veiculo()
+# terminal: Caminhao moveu para frente
+
 transporte.fazer_manutencao()
+# terminal: Parametros do caminhão verificados e corrigidos
 
 print()
 #Criar um automovel
 transporte2 = EscolherTransporte.criar_transporte(False)
 transporte2.mover_veiculo()
+# terminal: Automóvel moveu para frente
+
 transporte2.fazer_manutencao()
+# terminal: Manutenção do automóvel concluída

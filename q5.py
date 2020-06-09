@@ -78,9 +78,14 @@ usuario = User(False)
 documento = Document()
 
 documento.render()
+# terminal: Documento já está no primeiro estágio
+
 documento.publish(usuario)
+# terminal: Documento em moderação
 
 admin = User(True)
 documento.publish(admin)
+# terminal: Documento publicado pelo admin
 
 documento.render()
+# terminal: Publicação expirada. Documento voltou ao estado Draft
